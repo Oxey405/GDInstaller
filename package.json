@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "electron .",
-    "dist:linux": "electron-builder --linux --publish onTag"
+    "dist:linux": "electron-builder --linux --publish onTagOrDraft"
   },
   "author": "oxey405",
   "license": "GPL-3.0-or-later",
