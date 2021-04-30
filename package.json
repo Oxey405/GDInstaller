@@ -21,9 +21,8 @@
     "appId": "com.oxey405.kiwilauncher",
     "linux": {
       "target":"AppImage",
-      "icon": "gd-logo-notxt.png",
-      "category": "other",
-      "publish": "github"
+      "icon": "logo.png",
+      "category": "other"
     }
   }
 }
