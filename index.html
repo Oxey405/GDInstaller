@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>GDevelop Installer</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div style="height:2vh;"></div>
+            <center>
+                <div class="titleimg">
+                    <div style="height:3.5vh"></div>
+                    <img style="height: 14vh;width:auto" src="gd-logo.png" alt="">
+                    <h2 style="font-size: 3.5vh;">This is the optional GDevelop installation wizard for linux</h2>
+                </div>
+            </center>
+        </header>
+        <h1>Select installation options</h1>
+        <span>
+            <button id="checkShortcut" class="uncheck" onclick="checkShortcut()"></button>
+            <label class="lblname">GDevelop shortcut (app to search on the menu)</label>
+        </span>
+        <br>
+        <br>
+        <span>
+            <button id="checkDownload" class="uncheck" onclick="checkDl()"></button>
+            <label class="lblname">Re-Download from github</label>
+        </span>
+        <br>
+        <br>
+        <span>
+            <button id="checkLaunch" class="checked" onclick="checkStart()"></button>
+            <label class="lblname">Launch GDevelop when installation finished</label>
+        </span>
+        <br>
+        <br>
+        <button class="dir" onclick="setDirectory()">select installation directory</button>
+        <p id="dirIndication">Current directory path : </p>
+        <br>
+        <a id="install" download>
+            <button download class="install" onclick="installation()">INSTALL</button>
+        </a>
+        <br>
+        <meter id="steps" style="width:250px;height:25px;" min=0 max=100 value=0></meter>
+        <script src="check.js"></script>
+        <script src="installDir.js"></script>
+        <script src="installGD.js"></script>
+    </body>
+</html>
