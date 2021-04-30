@@ -1,7 +1,9 @@
 # GDInstaller
-## About :
+# About :
 GDinstaller is an optional installer of GDevelop 5 for linux.
 This software is under GPL-v3.0-or-later. Made by Oxey405.
+## Builds
+[![Build Status](https://travis-ci.com/Oxey405/GDInstaller.svg?branch=master)](https://travis-ci.com/Oxey405/GDInstaller)
 ## Project architecture
 There is not really any architecture but here is a tour of all the important files.
 
@@ -23,7 +25,7 @@ gd-logo-notxt.png -> logo of GDevelop (without text)
 
 style.css -> the style of the app.
 
-## How to contribute
+# How to contribute
 You want to contribute ? Follow these steps :
 (be sure you know git and electron.js before contributing. also linux is recommanded for devs but not mandatory)
 (be sure that you have some code editor like Visual Studio code and npm + nodejs installed with Prettier for vs code)
