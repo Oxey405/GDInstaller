@@ -8,14 +8,14 @@ var asBeenPlayed = true ;
 
 var checkcutgd = document.getElementById('checkShortcut');
 function checkShortcut() {
-if(checkcutgd.className == "uncheck") {
-checkcutgd.className = "checked";
-return ;
-}
-if(checkcutgd.className == "checked") {
-    checkcutgd.className = "uncheck";
-    return;
-    }
+// if(checkcutgd.className == "uncheck") {
+// checkcutgd.className = "checked";
+// return ;
+// }
+// if(checkcutgd.className == "checked") {
+//     checkcutgd.className = "uncheck";
+//     return;
+//     }
 }
 var checkDownload = document.getElementById('checkDownload');
 function checkDl() {

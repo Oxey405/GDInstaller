@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+require('update-electron-app')()
 const path = require('path')
 const os = require('os');
 const fs = require('fs');
@@ -17,7 +18,8 @@ function createWindow () {
     webPreferences: {
       nodeIntegration:true,
       contextIsolation:false,
-      enableRemoteModule:true
+      enableRemoteModule:true,
+
     }
   })
 

@@ -3,6 +3,7 @@ body {
     background-color: #141414;
     text-align: center;
     color:white;
+    border-radius: 10px;
 }
 .titleimg {
     background-color: #383838;

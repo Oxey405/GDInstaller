@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "gdinstaller is an optional installer of GDevelop 5 for linux",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Oxey405/GDInstaller"
+  },
   "scripts": {
     "test": "electron .",
-    "dist:linux":"electron-builder --linux"
+    "dist:linux": "electron-builder --linux --publish onTag"
   },
   "author": "oxey405",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "sound-play": "^1.1.0",
-    "sudo-prompt": "^9.2.1"
+    "sudo-prompt": "^9.2.1",
+    "update-electron-app": "^2.0.1"
   },
   "devDependencies": {
     "electron": "^12.0.5",
@@ -20,7 +24,7 @@
   "build": {
     "appId": "com.oxey405.kiwilauncher",
     "linux": {
-      "target":"AppImage",
+      "target": "AppImage",
       "icon": "logo.png",
       "category": "other"
     }
