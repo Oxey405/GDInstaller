@@ -1,6 +1,6 @@
 {
   "name": "gdinstaller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gdinstaller is an optional installer of GDevelop 5 for linux",
   "main": "index.js",
   "repository": {
@@ -14,6 +14,7 @@
   "author": "oxey405",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "electron-updater": "^4.3.8",
     "sound-play": "^1.1.0",
     "sudo-prompt": "^9.2.1",
     "update-electron-app": "^2.0.1"
