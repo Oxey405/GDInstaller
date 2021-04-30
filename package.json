@@ -4,7 +4,8 @@
   "description": "gdinstaller is an optional installer of GDevelop 5 for linux",
   "main": "index.js",
   "scripts": {
-    "test": "electron ."
+    "test": "electron .",
+    "dist:linux":"electron-builder --linux"
   },
   "author": "oxey405",
   "license": "GPL-3.0-or-later",
@@ -12,5 +13,8 @@
     "electron": "^12.0.5",
     "sound-play": "^1.1.0",
     "sudo-prompt": "^9.2.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.10.5"
   }
 }
