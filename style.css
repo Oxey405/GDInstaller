@@ -62,7 +62,7 @@ body {
   .install {
     margin-top: 5px;
     z-index: 10 ;
-    height: 40px;
+    height: 35px;
     width:275px;
     border-color: #3d7fc9 ;
     border: 1px solid #3d7fc9 ;
@@ -84,6 +84,14 @@ body {
     background-color: #3d7fc9;
     color: white;
     transition: 0.5s;
+  }
+  .gh {
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      height:9.5vh;
+      width:9.5vh;
+      border-radius: 55px;
   }
 
 meter::-webkit-meter-optimum-value {

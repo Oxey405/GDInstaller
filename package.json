@@ -1,6 +1,6 @@
 {
   "name": "gdinstaller",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gdinstaller is an optional installer of GDevelop 5 for linux",
   "main": "index.js",
   "repository": {

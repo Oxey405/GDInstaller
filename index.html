@@ -1,10 +1,10 @@
 <html>
   <head>
-    <title>GDevelop Installer v1.0.1</title>
+    <title>GDevelop Installer v1.0.3</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <div style="border-radius: 5px">
       <header>
         <div style="height: 2vh"></div>
@@ -18,7 +18,7 @@
           </div>
         </center>
       </header>
-      <h1>Select installation options</h1>
+      <h2>Select installation options</h2>
       <span>
         <button
           id="checkShortcut"
@@ -47,28 +47,33 @@
         >
       </span>
       <br />
-      <br />
       <button class="dir" onclick="setDirectory()">
         select installation directory
       </button>
       <p id="dirIndication">Current directory path :</p>
-      <br />
       <a id="install" download>
         <button download class="install" onclick="installation()">
           INSTALL
         </button>
+        <p>You may have to restart your computer for changes to occur.</p>
       </a>
-      <br />
       <meter
         id="steps"
-        style="width: 250px; height: 25px"
+        style="width: 250px; height: 20px"
         min="0"
         max="100"
         value="0"
       ></meter>
+      <a title="report an issue" onclick="openGH()"><img  src="github_logo.png" class="gh"></img></a>
     </div>
     <script src="check.js"></script>
     <script src="installDir.js"></script>
     <script src="installGD.js"></script>
+    <script>
+      function openGH() {
+        const {shell} = require('electron').remote ;
+        shell.openExternal('https://github.com/Oxey405/GDInstaller');
+      }
+    </script>
   </body>
 </html>
